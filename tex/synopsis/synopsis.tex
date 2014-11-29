@@ -1,0 +1,76 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\title{Linguistics term paper at University of Bergen}
+\author{Koenraad De Smedt} 
+\date{\today}
+\title{My\_Compilator}
+\begin{document}
+\begin{center} \vfill
+\textbf{\Large EPITA}
+
+{\large Projet Informatique Pratique : My\_Compilator} 
+
+\vspace{2cm}
+
+
+Membres:\\
+
+	Lucien Boillod\\
+    Thibaud Michaud\\
+    Maxime Gaudron\\
+    Baal, Belzebuth, Morgoth, nous hesitons encore...
+
+\vspace{5cm}
+
+Résumé : Implémentation d'un compilateur en lagage C 
+\end{center} \clearpage
+
+\section{Etats de l'art}
+Il est très difficile de faire un état de l'art eds compilateur. C'est une
+discipline aussi vaste qu'indispensable dans le domain de l'informatique.
+L'etats de l'art du compilateur est a l'informaticien ce que l'etats de l'art
+strategique est au plus fin tacticien. Mais actuellement les compilateurs sont
+de plus en plus performant et rapide. Pour en citer quelques un le compilateur
+java accompagné de son ramasse-miettes et de sa machine virtuelle. Le
+compilateur ocaml qui comporte lui aussi d'un ramasse-miettes. Les compilateurs
+pour langage fonctionnel et/ou impératif. Bref il existe autant de compilateur
+qu'il peut exister de langage (on pourrait imaginer un compilateur de francais
+ou d'anglais qui comprendrais ce qu'on lui dit avec de veritable émotion et
+... et ... )
+
+\section{Présentation} \label{sec:intro}
+my\_compilator consistera à implémenté un compilateur pour le langage /*inserer langage*/. 
+Nous savons qu'il s'agit d'un projet ambitieux mais algorithemiquement 
+interessant voir essentielle dans la vie de toute ingénieur dans les nouvelles
+techonoliges se doit de connaitre et de maitriser.
+Notre objectif se déroulera en plusieur partie tout d'abord la collecte
+d'information, nous irons piocher dans les ressources que nous propose EPITA ,
+enseignant / chercheur et bien d'autre encore. Mais aussi dans nos capassité de
+recherche personnel, let me google it for you ... ainsi que nos capacité de
+comprehension personnel . 
+\subsection{analyse}
+En un second temps nous commenceront l'implementation du compilateur voir d'un
+interpreteur pour le langage choisis si cela s'y prete, la base etant semblable
+au deux seul la comprehension de l'arbre syntaxique diffère.
+
+cette etape s'articulera autours de trois points : 
+\begin{itemize}
+\item[->] \textbf{analyse lexical} : recuperation des "mots" permettant la comprehension du fichier
+source en leur associant une signification abstraite\\
+plusieur choix : lex et yacc ou from scratch
+\item[->] \textbf{analyse syntaxique} : verification de la structuture
+gramaticale utilisation d'un arbre syntaxique\\
+\item[->] \textbf{analyse semantique} : verification du sens de la phrase
+reconstruite extraction des données d'un arbre syntaxique\\
+\end{itemize}
+
+\subsection{génération de code}
+Deux choix s'offre a nous a ce moment : interpretation ou compilation. Nous
+nous orienterons d'abord vers la compilation du langage qui consistera aprés
+l'obtentions du resultat de notre analyse sementique a faire quelques
+optimisation du code code a
+\end{document}
